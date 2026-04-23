@@ -21,6 +21,10 @@ clear, easy to run, tested, and presentation-ready through Streamlit.
 - Interactive four-tab Streamlit dashboard
 - Unit tests and GitHub Actions CI
 
+## Dashboard Preview
+
+![Dashboard preview](figures/dashboard_example.gif)
+
 ## Dashboard
 
 Run the app and move through the project in four stages:
