@@ -42,10 +42,7 @@ For derivative value \(V(S,t)\), the Black-Scholes PDE with continuous dividend
 yield \(q\) is
 
 $$
-\frac{\partial V}{\partial t}
-+ \frac{1}{2}\sigma^2 S^2 \frac{\partial^2 V}{\partial S^2}
-+ (r-q)S\frac{\partial V}{\partial S}
-- rV = 0.
+\frac{\partial V}{\partial t} + \frac{1}{2}\sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} + rS \frac{\partial V}{\partial S} - rV = 0
 $$
 
 For European options, the closed-form solution uses
@@ -89,11 +86,7 @@ visible and easy to explain.
 Under the risk-neutral measure, the terminal stock price follows
 
 $$
-S_T = S_0
-\exp\left[
-\left(r-q-\frac{1}{2}\sigma^2\right)T
-+ \sigma\sqrt{T}Z
-\right],
+S_T = S_0 \exp\left[\left(r - \frac{1}{2}\sigma^2\right)T + \sigma\sqrt{T}Z\right],
 \qquad Z \sim \mathcal{N}(0,1).
 $$
 
